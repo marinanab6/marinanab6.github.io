@@ -2,15 +2,103 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Welcome to Congo Flavours</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome - Congo Flavours</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('plantain-chicken.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Dark overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .card {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 3rem;
+      max-width: 600px;
+      text-align: center;
+      border-radius: 25px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: #fffbe6;
+      margin-bottom: 1.5rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+      color: #f0e6d2;
+      margin-bottom: 2.5rem;
+    }
+
+    .menu-btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      background-color: #ffd700;
+      color: #000;
+      text-decoration: none;
+      border-radius: 50px;
+      font-weight: bold;
+      font-size: 1rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .menu-btn:hover {
+      background-color: #e6c200;
+      transform: scale(1.05);
+    }
+
+    .qr-code {
+      margin-top: 2.5rem;
+    }
+
+    .qr-code p {
+      color: #ddd;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .qr-code img {
+      width: 160px;
+      height: 160px;
+      border-radius: 15px;
+      border: 3px solid #fff;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
-  <div class="welcome-container">
-    <h1>Welcome to <span class="highlight">Congo Flavours</span> Restaurant</h1>
-    <p>This is the place where rich Congolese taste meets elegance and warmth.<br>
-       Feel free to explore our menu and discover your new favorite dish!</p>
-    <a href="menu.html" class="btn">View Our Menu</a>
+  <div class="card">
+    <h1>Welcome to Congo Flavours</h1>
+    <p>This is the place where Congolese tradition meets delicious flavor. Feel free to explore our specialties.</p>
+    <a class="menu-btn" href="menu.html">See the Menu</a>
+    <div class="qr-code">
+      <p>Scan to access the menu:</p>
+      <img src="qr-menu.png" alt="QR Code to Menu">
+    </div>
   </div>
 </body>
 </html>

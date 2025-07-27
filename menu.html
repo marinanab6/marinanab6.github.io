@@ -2,41 +2,77 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Congo Flavours Menu</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu - Congo Flavours</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('logo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      backdrop-filter: blur(5px);
+    }
+    .container {
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 5% auto;
+      padding: 2rem;
+      max-width: 800px;
+      border-radius: 15px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin-bottom: 1.5rem;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 10px;
+    }
+    .dish-name {
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    .dish-desc {
+      font-size: 1rem;
+      color: #ddd;
+    }
+    a.back {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a.back:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <div class="menu-container">
-    <h1>🍽️ Our Menu</h1>
-
-    <section>
-      <h2>Traditional Dishes</h2>
-      <ul>
-        <li><strong>Pondu & Rice</strong> – Kes 450</li>
-        <li><strong>Ugali na Samaki</strong> – Kes 500</li>
-        <li><strong>Makayabu (Salted Fish)</strong> – Kes 550</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Snacks & Sides</h2>
-      <ul>
-        <li><strong>Mandazi</strong> – Kes 80</li>
-        <li><strong>Plantains (Makala)</strong> – Kes 100</li>
-        <li><strong>Frites & Mayonnaise</strong> – Kes 150</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Drinks</h2>
-      <ul>
-        <li><strong>Jus de Bissap (Hibiscus Juice)</strong> – Kes 120</li>
-        <li><strong>Ginger Juice</strong> – Kes 100</li>
-        <li><strong>Mineral Water</strong> – Kes 80</li>
-      </ul>
-    </section>
-
-    <a href="index.html" class="btn">⬅ Back to Home</a>
+  <div class="container">
+    <h1>🍽️ Our Congolese Dishes</h1>
+    <ul>
+      <li><div class="dish-name">Pondu</div><div class="dish-desc">Cassava leaves stew cooked with palm oil and spices.</div></li>
+      <li><div class="dish-name">Fufu</div><div class="dish-desc">A smooth, stretchy staple made from cassava or maize flour.</div></li>
+      <li><div class="dish-name">Liboke ya Malangwa</div><div class="dish-desc">Marinated fish steamed in banana leaves, rich in aroma and flavor.</div></li>
+      <li><div class="dish-name">Makayabu</div><div class="dish-desc">Salted fried fish often served with fufu or rice.</div></li>
+      <li><div class="dish-name">Saka Saka</div><div class="dish-desc">Cassava leaves cooked in a peanut butter sauce.</div></li>
+      <li><div class="dish-name">Ndakala</div><div class="dish-desc">Crispy dried baby fish, a favorite Congolese snack or side.</div></li>
+      <li><div class="dish-name">Mbika</div><div class="dish-desc">Delicious stew made with ground pumpkin seeds.</div></li>
+      <li><div class="dish-name">Chikwangue</div><div class="dish-desc">Fermented cassava wrapped in banana leaves, best with sauces or fish.</div></li>
+      <li><div class="dish-name">Ngulu na Loso</div><div class="dish-desc">Pork served with fluffy white rice and tomato sauce.</div></li>
+      <li><div class="dish-name">Madesu</div><div class="dish-desc">Red beans slowly cooked with onions, garlic, and palm oil.</div></li>
+      <li><div class="dish-name">Pili Pili Chicken</div><div class="dish-desc">Grilled spicy chicken marinated with Congo-style chili sauce.</div></li>
+    </ul>
+    <a class="back" href="index.html">⬅ Back to Welcome Page</a>
   </div>
 </body>
 </html>
